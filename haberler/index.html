@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haberler — Altı Nokta Körler Derneği İstanbul Şubesi</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <div class="sayfa-baslik">
+    <h1>Haberler ve Duyurular</h1>
+    <p>Derneğimizden son gelişmeler</p>
+  </div>
+  <nav class="breadcrumb" aria-label="Konum">
+    <a href="/index.html">Ana Sayfa</a> <span> › Haberler</span>
+  </nav>
+
+  <section class="bolum">
+    <div class="bolum-ic">
+      <div class="kart-grid" id="haberler-liste">
+        <div style="text-align:center;grid-column:1/-1;color:var(--metin-ac);padding:2rem">Haberler yükleniyor...</div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="/js/header.js"></script>
+  <script>
+    async function haberlerYukle() {
+      const konteyner = document.getElementById('haberler-liste');
+      try {
+        const res = await fetch('/haberler/haberler.json');
+        const data = await res.json();
+        if (!data.items || data.items.length === 0) {
+          konteyner.innerHTML = '<p style="text-align:center;color:var(--metin-ac);grid-column:1/-1">Henüz haber eklenmemiş.</p>';
+          return;
+        }
+        konteyner.innerHTML = data.items.map(h => `
+          <a class="kart" href="/haberler/${h.slug}.html">
+            <div class="kart-gorsel">${h.gorsel ? `<img src="${h.gorsel}" alt="${h.baslik}" loading="lazy">` : '📰'}</div>
+            <div class="kart-icerik">
+              <p class="kart-tarih">${h.tarih}</p>
+              <h3>${h.baslik}</h3>
+              <p>${h.ozet}</p>
+              <span class="kart-etiket">Devamını Oku →</span>
+            </div>
+          </a>
+        `).join('');
+      } catch {
+        konteyner.innerHTML = '<p style="text-align:center;color:var(--metin-ac);grid-column:1/-1">İçerik yüklenemedi.</p>';
+      }
+    }
+    haberlerYukle();
+  </script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

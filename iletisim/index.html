@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim — Altı Nokta Körler Derneği İstanbul Şubesi</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <div class="sayfa-baslik">
+    <h1>İletişim</h1>
+    <p>Sorularınız için bize ulaşın</p>
+  </div>
+  <nav class="breadcrumb" aria-label="Konum">
+    <a href="/index.html">Ana Sayfa</a> <span> › İletişim</span>
+  </nav>
+
+  <section class="bolum">
+    <div class="bolum-ic">
+      <div class="iletisim-grid">
+        <!-- Bilgi -->
+        <div>
+          <h2 style="font-family:var(--font-baslik);color:var(--lacivert);font-size:1.5rem;margin-bottom:1.8rem">Bize Ulaşın</h2>
+
+          <div class="iletisim-bilgi-item">
+            <div class="iletisim-ikon">📍</div>
+            <div>
+              <h4>Adres</h4>
+              <p>İzzetpaşa Çifliği Mah. Vefa Poyraz Cad. No:6<br>Şişli / İstanbul</p>
+            </div>
+          </div>
+
+          <div class="iletisim-bilgi-item">
+            <div class="iletisim-ikon">📞</div>
+            <div>
+              <h4>Telefon</h4>
+              <a href="tel:02122919171">0212 291 91 71</a><br>
+              <a href="tel:02122918144">0212 291 81 44</a>
+            </div>
+          </div>
+
+          <div class="iletisim-bilgi-item">
+            <div class="iletisim-ikon">✉️</div>
+            <div>
+              <h4>E-posta</h4>
+              <a href="mailto:istanbul_altinokta@hotmail.com">istanbul_altinokta@hotmail.com</a>
+            </div>
+          </div>
+
+          <div class="iletisim-bilgi-item">
+            <div class="iletisim-ikon">🕐</div>
+            <div>
+              <h4>Çalışma Saatleri</h4>
+              <p>Pazartesi – Cuma: 09:00 – 18:00<br>Cumartesi: 10:00 – 18:00<br>Pazar: Kapalı</p>
+            </div>
+          </div>
+
+          <div class="iletisim-bilgi-item">
+            <div class="iletisim-ikon">📷</div>
+            <div>
+              <h4>Sosyal Medya</h4>
+              <a href="https://www.instagram.com/altinokta1950/" target="_blank" rel="noopener">@altinokta1950 (Instagram)</a><br>
+              <a href="https://www.facebook.com/profile.php?id=100012264347269" target="_blank" rel="noopener">Facebook Sayfamız</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <h2 style="font-family:var(--font-baslik);color:var(--lacivert);font-size:1.5rem;margin-bottom:1.8rem">Mesaj Gönderin</h2>
+          <!-- Formspree action URL'ini kendi formunuzla değiştirin: https://formspree.io/f/XXXXXXXX -->
+          <form id="iletisim-form" action="https://formspree.io/f/FORMSPREEID" method="POST">
+            <div class="form-grup">
+              <label for="ad">Ad Soyad *</label>
+              <input type="text" id="ad" name="ad" required placeholder="Adınız ve soyadınız">
+            </div>
+            <div class="form-grup">
+              <label for="eposta">E-posta *</label>
+              <input type="email" id="eposta" name="eposta" required placeholder="ornek@eposta.com">
+            </div>
+            <div class="form-grup">
+              <label for="konu">Konu</label>
+              <input type="text" id="konu" name="konu" placeholder="Mesajınızın konusu">
+            </div>
+            <div class="form-grup">
+              <label for="mesaj">Mesaj *</label>
+              <textarea id="mesaj" name="mesaj" required placeholder="Mesajınızı buraya yazın..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-altin" style="width:100%;font-size:1rem">Gönder</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Harita -->
+      <div style="margin-top:3rem;border-radius:16px;overflow:hidden;height:350px;border:1px solid #e0dbd3">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.!2d28.9852!3d41.0565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a6d4b4f5f5%3A0x0!2zxLB6emV0UGHFn2EsIFZlZmEgUG95cmF6IENkLiA2YSwgMzQzODcgxZ5pxZ9saS_EsHN0YW5idWw!5e0!3m2!1str!2sTR!4v1717000000000"
+          width="100%" height="350" style="border:0" allowfullscreen loading="lazy"
+          title="Altınokta Körler Derneği İstanbul Şubesi Haritası"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="/js/header.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

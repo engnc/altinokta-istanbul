@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "slug": "ornek-haber-1",
+      "baslik": "Yeni Kitap Seslendirme Gönüllüleri Arıyoruz",
+      "tarih": "Mayıs 2025",
+      "ozet": "Görme engelli bireylerin bilgiye erişimini kolaylaştırmak için kitap seslendirme çalışmalarımıza katılacak gönüllüler arıyoruz.",
+      "icerik": "Tam haber içeriği buraya gelecek...",
+      "gorsel": ""
+    },
+    {
+      "slug": "ornek-haber-2",
+      "baslik": "Erişilebilirlik Farkındalık Etkinliğimiz Gerçekleşti",
+      "tarih": "Nisan 2025",
+      "ozet": "Şişli'de düzenlediğimiz farkındalık etkinliğine yüzlerce kişi katıldı. Görme engellilerin günlük yaşamdaki zorluklarına dikkat çektik.",
+      "icerik": "Tam haber içeriği buraya gelecek...",
+      "gorsel": ""
+    },
+    {
+      "slug": "ornek-haber-3",
+      "baslik": "Mesleki Eğitim Kurslarımız Başlıyor",
+      "tarih": "Mart 2025",
+      "ozet": "Görme engelli bireyler için masaj terapistliği ve müzik eğitimi kurslarımız Haziran ayında başlıyor. Başvurular açıldı.",
+      "icerik": "Tam haber içeriği buraya gelecek...",
+      "gorsel": ""
+    }
+  ]
+}
